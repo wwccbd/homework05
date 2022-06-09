@@ -1,0 +1,188 @@
+.App {
+  margin: 0 auto;
+}
+#pagewrapper {
+  display: flex;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.topbar {
+  width: 100%;
+  height: 48px;
+  background-color: #484A47;
+}
+.myWebsite {
+  display: flex;
+  flex-direction: row;
+  float: left;
+  margin-left: 20px;
+  color: white;
+  font-size: 16px;
+}
+.topbarItem {
+  float: right;
+  margin: 0 10px;
+  color: white;
+  width: 100px;
+  height: 48px;
+  font-size: 16px;
+  background-color: #484A47;
+  text-align: center;
+  border: none;
+  padding-top: 10px;
+}
+.homeButton {
+  float: left;
+  margin: 0 10px;
+  color: white;
+  width: 150px;
+  height: 48px;
+  font-size: 16px;
+  background-color: #484A47;
+  text-align: center;
+  border: none;
+  padding-top: 10px;
+  margin-left: -15px;
+}
+.toggleMenu {
+  display: none;
+  color: white;
+  border: none;
+  font-size: 30px;
+  background-color: #484A47;
+  height: 30px;
+  width: 30px;
+  margin: 0px;
+}
+
+.homeButton:hover {
+  cursor: pointer;
+}
+.topbarItemSelected {
+  padding-top: 13px;
+  border-bottom: Solid #C751FF;
+}
+.topbarItem:hover {
+  cursor: pointer;
+  border-bottom: Solid lightblue;
+}
+
+.Links {
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
+.homeIcon {
+  padding: 0px;
+}
+.Purple {
+  margin-right: 0px;
+  color: #C751FF;
+}
+
+.TopSection {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 95%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.BottomSection {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 95%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#NavLinks {
+  display: flex;
+  flex-direction: row;
+}
+#LinksBar {
+  display: flex;
+  flex-direction: row;
+}
+.introImage {
+  margin-top: 25px;
+  width: 250px;
+  height: 140px;
+}
+@media (min-width: 1200px) {
+  #NavLinks {
+    display: flex;
+    flex-direction: row;
+  }
+  #LinksBar {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 801px) and (max-width:1199px) {
+  #NavLinks {
+    display: flex; 
+    flex-direction: row;
+  }
+  #LinksBar {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 400px) and (max-width:800px) {
+  #pagewrapper {
+    display: flex;
+    max-width: 400px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  #LinksBar {
+    background-color:rgba(0, 0, 0, 0.50);
+    width: 400px;
+    height: 1600px;
+    position: absolute;
+    top: 48px;
+  }
+  #NavLinks {
+    flex-direction: column;
+    position: absolute;
+    margin-right: 0px;
+    right: -10px;
+  }
+  .topbarItem {
+    float: right;
+    margin: 0 10px;
+    color: white;
+    width: 133px;
+    height: 48px;
+    font-size: 16px;
+    background-color: #484A47;
+    text-align: left;
+    border: none;
+    padding-top: 10px;
+  }
+  .topbarItemSelected {
+    padding-top: 13px;
+    border-left: Solid #C751FF;
+  }
+  .toggleMenu {
+    display: flex;
+    position: relative;
+    right: -190px;
+    top: 13px;
+  }
+  .TopSection {
+    flex-direction: column-reverse;
+  }
+  .introImage {
+    width: 368px;
+    height: 216px;
+  }
+  .topbarItem:hover {
+    cursor: pointer;
+    border-left: Solid lightblue;
+    border-bottom: none;
+  }
+  
+}

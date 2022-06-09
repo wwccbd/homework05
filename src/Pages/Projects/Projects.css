@@ -1,0 +1,52 @@
+.App {
+  margin: 0 auto;
+  width: 100%;
+}
+
+header {
+  border-bottom: solid #CCCCCC;
+}
+h2 {
+  font-size: 24px;
+}
+.gitimg {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.emptyDiv {
+  text-align: center;
+  background-color: gray;
+  width: 150px;
+  height: 150px;
+}
+.emptyDiv a {
+  text-align: center;
+  position: relative;
+}
+.GridContainer {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+  justify-items: center;
+  margin-top: 10px;
+
+}
+
+@media (min-width: 801px) and (max-width:1200px) {
+  .GridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+}
+@media (min-width: 400px) and (max-width:800px) {
+  .GridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+}
